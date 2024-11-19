@@ -1,29 +1,26 @@
-STR = True
-print("Book Store")
-list== ("1. The lie\n2.Twilight\n3.Levidicus\n4.Passion twist\n5.Pink")
-books = input("Choose book""(1. The lie\n2.Twilight\n3.Levidicus\n4.Passion twist\n5.Pink)")
-book1 = "1.The lie"
-book2 = "2.Twilight"
-book3 = "3.Levidicus"
-book4 = "4.Passion twist"
-book5 = "5.Pink"
-if books == book1:
-    print("Author:\nPrice:$\nPlot:")
-if books == book2:
-    print("Author:\nPrice:$\nPlot:")
+from Menue import TAX
 
+Game = True
 
-
-
-
-
-
-
-
-
-
-
-
-"""while STR:
-    print("Escape Book Store")
-    print("1. The lie\n2.Twilight\n3.Levidicus\n4.Passion twist\n5.Pink")"""
+while Game == True:
+    ABP = input("a. add books\nb. sell books\nc. reduce price\nd. increase price\ne.show books\nf. exit menue\nz. other menue")
+    if ABP == "a":
+        adding = TAX.add()
+    elif ABP == "b":
+        selling = TAX.sell()
+    elif ABP == "c":
+        reduction = TAX.reducea()
+    elif ABP == "d":
+        increase = TAX.increasea()
+    elif ABP == "e":
+        displaybook = TAX.showbooks()
+    elif ABP == "f":
+        Game == False 
+        break
+    elif ABP == "z":
+        ABP = input("l. load to file\ns. save to file")
+        if ABP == "l":
+            load = TAX.load()
+        elif ABP == "s":
+            save = TAX .save()
+        break
