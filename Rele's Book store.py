@@ -1,19 +1,21 @@
 from Menue import TAX
 
+PGA = TAX()
+
 Game = True
 
 while Game == True:
     ABP = input("a. add books\nb. sell books\nc. reduce price\nd. increase price\ne.show books\nf. exit menue\nz. other menue")
     if ABP == "a":
-        adding = TAX.add()
+        adding = PGA.add()
     elif ABP == "b":
-        selling = TAX.sell()
+        selling = PGA.sell()
     elif ABP == "c":
-        reduction = TAX.reducea()
+        reduction = PGA.reducea()
     elif ABP == "d":
-        increase = TAX.increasea()
+        increase = PGA.increasea()
     elif ABP == "e":
-        displaybook = TAX.showbooks()
+        displaybook = PGA.showbooks()
     elif ABP == "f":
         Game == False 
         break

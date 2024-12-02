@@ -1,17 +1,21 @@
 class TAX():
     def __int__ (self):
-        self._books = {}
+
         self._list = 0
         self._author = "n"
         self._name = "n"
+        self.books = {}
         self._price = float(0)
 
-    def add():
-        books = input("Enter book name:")
-        ATH = input("Author:")
-        PRI = input("Price:$")
+    def add(self):
+        self._name= input("Enter book name:")
+        self._author= input("Author:")
+        self._price= input("Price:$")
+        print(self._name)
+        self.books[self._name] = {self._author, self._price}
+        print(self.books)
 
-        tba = {books, ATH, PRI}
-        print("book list:",tba)
-
+    def sell(self):
+        self._name = input("Name of book to sell:")
+        self._price = input("Price:$")
     
