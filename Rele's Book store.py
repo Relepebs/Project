@@ -1,15 +1,41 @@
-from Menue import TAX
+from Menue import BookStore
 
-PGA = TAX()
+
+foop = True
+library = BookStore()
+
+
+while foop == True:
+	bng = input(" A. Add books \n B. Sell books \n C. Reduce price (5%) \n D. Increase price (5%)\n E. Display all books \n F. Quit \n ").upper()
+	if bng == "A":
+		Adding = library.add()
+	elif bng == "B":
+		Selling = library.sell()
+	elif bng == "C":
+		reducing == library.reduce
+
+	elif bng == "F":
+		Exit = library.qui(foop)
+		break
+
+
+
+
+
+
+
+"""from Menue import TAX
+
+nbp = TAX()
 
 Game = True
 
 while Game == True:
     ABP = input("a. add books\nb. sell books\nc. reduce price\nd. increase price\ne.show books\nf. exit menue\nz. other menue")
     if ABP == "a":
-        adding = PGA.add()
+        adding = nbp.add()
     elif ABP == "b":
-        selling = PGA.sell()
+        selling = nbp.sell()
     elif ABP == "c":
         reduction = PGA.reducea()
     elif ABP == "d":
@@ -26,3 +52,4 @@ while Game == True:
         elif ABP == "s":
             save = TAX .save()
         break
+"""
