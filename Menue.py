@@ -13,7 +13,7 @@ class BookStore():
 		self._Author = input("Enter Author's name: ").upper()
 		if self._Author:
 			self._Price = float(input("Price $: "))
-			if self._Price >0 and self._Price <= self._Cash
+			if self._Price >0 and self._Price <= self._Cash: float
 			self._Books[self._Name] = {'Author': self._Author, 'Price': self._Price}
 			print (self._Books)
 		
@@ -22,8 +22,13 @@ class BookStore():
 		self._Name = input("enter the name of the book you would like to sell: \n").upper()
 		if self._Name in self._Books:
 			self._Books.pop(self._Name)
-	def reduce(self):
+	def values(self):
+		for a in self._Books:
+			print(a , self._Books[a]["Author"] )
+			print(self._Price [a]["Price"])
 		
+		
+
 	
 
 	

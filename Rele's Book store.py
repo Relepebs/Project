@@ -6,13 +6,13 @@ library = BookStore()
 
 
 while foop == True:
-	bng = input(" A. Add books \n B. Sell books \n C. Reduce price (5%) \n D. Increase price (5%)\n E. Display all books \n F. Quit \n ").upper()
+	bng = input(" A. Add books \n B. Sell books \n C. View Library \n D. Save books \n  Z. Quit \n ").upper()
 	if bng == "A":
 		Adding = library.add()
 	elif bng == "B":
 		Selling = library.sell()
 	elif bng == "C":
-		reducing == library.reduce
+		View = library.values()
 
 	elif bng == "F":
 		Exit = library.qui(foop)
