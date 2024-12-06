@@ -12,8 +12,7 @@ class BookStore():
 		self._Name = input("Enter Name of book: ").upper()
 		self._Author = input("Enter Author's name: ").upper()
 		if self._Author:
-			self._Price = float(input("Price $: "))
-			if self._Price >0 and self._Price <= self._Cash: float
+			self._Price = input("Price $: ")
 			self._Books[self._Name] = {'Author': self._Author, 'Price': self._Price}
 			print (self._Books)
 		
@@ -25,7 +24,7 @@ class BookStore():
 	def values(self):
 		for a in self._Books:
 			print(a , self._Books[a]["Author"] )
-			print(self._Price [a]["Price"])
+			print(self._Books [a]["Price"])
 		
 		
 
