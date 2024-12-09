@@ -13,6 +13,9 @@ while foop == True:
 		Selling = library.sell()
 	elif bng == "C":
 		View = library.values()
+	elif bng == "D":
+		file = library.MakeFile()
+		
 
 	elif bng == "F":
 		Exit = library.qui(foop)

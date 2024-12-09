@@ -25,8 +25,11 @@ class BookStore():
 		for a in self._Books:
 			print(a , self._Books[a]["Author"] )
 			print(self._Books [a]["Price"])
+
+	def 
+	
 		
-		
+
 
 	
 
@@ -40,7 +43,13 @@ class BookStore():
 
 
 
-
+'''import os
+	filepath = os.getcwd()
+	def MakeFile(file_name):
+			temp_path = filepath + file_name
+	with open("file._name", "w") as f:
+			f.write('def print_success(): print "success"'')
+			print ("Saved file")'''
 
 
 
@@ -69,5 +78,3 @@ class BookStore():
     def sell(self):
         self._name = input("Name of book to sell:")
         self._price = input("Price:$")"""
-
-    
