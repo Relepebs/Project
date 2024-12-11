@@ -26,13 +26,13 @@ class BookStore():
 			print(a , self._Books[a]["Author"] )
 			print(self._Books [a]["Price"])
 
-	def MakeFile(file._Name):
-		temp_path = filepath + file._Name
+	def MakeFile(self):
 		with open("file.name","w") as f:
-			f.write('''\ def print_success(): print "success"''')
-			print("Saved File")
-			lines = []
-			lines.append()
+			for b in self._Books():
+				f.write(str(b, self._Books[b]["Author"]))
+				print("Saved File")
+				lines = []
+				lines.append(f.write)
 	
 		
 
