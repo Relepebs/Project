@@ -28,11 +28,17 @@ class BookStore():
 
 	def MakeFile(self):
 		with open("file.name","w") as f:
-			for b in self._Books():
-				f.write(str(b, self._Books[b]["Author"]))
-				print("Saved File")
-				lines = []
-				lines.append(f.write)
+			for b in self._Books:
+					f.write(str(b))
+					f.write(self._Books[b]["Author"])
+					print("Saved File")
+					d={}
+					f=open("file.name","r")
+					for text in f.write():
+						words = text.split()
+						self._Books = {f"words"}
+						
+				
 	
 		
 
