@@ -30,23 +30,9 @@ class BookStore():
 		with open("file.name","w") as f:
 			for b in self._Books:
 					f.write(str(b))
+					f.write("\n")
 					f.write(self._Books[b]["Author"])
-					print("Saved File")
-					d={}
-					f=open("file.name","r")
-					for text in f.write():
-						words = text.split()
-						self._Books = {f"words"}
-						
-				
-	
-		
-
-
-	
-
-	
-
+					print("Saved File")		
 
 	def qui(self, foop):
 		self._foop = False
@@ -68,7 +54,11 @@ class BookStore():
 
 
 
-
+'''d= dict(line.strip().split(':')for line in open('file.name'))
+					f=open("file.name","r")
+					for line in f.write():
+						name,score= line.split()
+						d[name] = int(score)'''
 
 
 """class TAX():
